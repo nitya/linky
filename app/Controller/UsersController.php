@@ -19,8 +19,12 @@ class UsersController extends AppController {
         return parent::isAuthorized($user);
     }
 
+
     public function index() {
         $this->set('users', $this->User->find('all'));
+
+         // JsonView: default formatting used (no custom view files exist)
+        $this->set('_serialize', array('users'));
     }
 
     public function view($id) {

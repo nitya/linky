@@ -29,6 +29,9 @@ class BoardsController extends AppController {
         			)
         		)
         	));
+
+        // JsonView: default formatting used (no custom view files exist)
+        $this->set('_serialize', array('boards'));
     }
     public function create() {
     	if(!empty($this->data)){

@@ -34,9 +34,15 @@ App::import('Vendor', array('file' => 'autoload'));
  * @link http://book.cakephp.org/2.0/en/controllers.html#the-app-controller
  */
 class AppController extends Controller {
+
+    // Add support for JsonView
+    public $viewClass = 'Json';
+
+    // JsonView: Add RequestHandler support
 	public $components = array(
         'Session',
         'Auth' => array('authorize' => 'Controller'),
+        'RequestHandler',
     );
 
     public function beforeFilter() {
@@ -57,4 +63,5 @@ class AppController extends Controller {
 	    // Default deny
 	    return false;
 	}
+
 }
