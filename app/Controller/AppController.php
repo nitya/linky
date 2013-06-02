@@ -57,4 +57,7 @@ class AppController extends Controller {
 	    // Default deny
 	    return false;
 	}
+
+    // Comment out this line to revert to original (non-responsive) theme
+	public $theme = "Cakestrap";
 }

@@ -11,6 +11,7 @@ Linky is a web-based app that allows teachers to scaffold learning via themeboar
   * `app/tmp/cache`
   * `app/tmp/cache/persistent`
   * `app/tmp/cache/models`
+  * `app/tmp/logs`
 4. Linky uses [WideImage](https://packagist.org/packages/smottt/wideimage) for manipulating images. WideImage can be updated using [Composer](http://getcomposer.org/doc/00-intro.md), which comes pre-istalled in this repo. To update WideImage run `composer update` in `app`.
 
 ## License
