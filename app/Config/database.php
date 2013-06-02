@@ -63,9 +63,9 @@ class DATABASE_CONFIG {
 		'datasource' => 'Database/Mysql',
 		'persistent' => false,
 		'host' => 'localhost',
-		'login' => 'root',
-		'password' => 'root',
-		'database' => 'themeboard',
+		'login' => 'linky',
+		'password' => 'l1nky',
+		'database' => 'aphescom_linky',
 		'prefix' => '',
 		//'encoding' => 'utf8',
 	);
